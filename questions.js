@@ -1,23 +1,23 @@
 var questions = [
     {
-        title: "Commonly used data types DO NOT include:",
-        choices: ["strings", "booleans", "alerts", "numbers"],
-        answer: "alerts"
+        title: "What does the command git commit used for?",
+        choices: ["Notes a change to the local repo", "Sends changes to the hosting service", "Adds a file for inclulsion in Git", "Downloads the freshest version of repo"],
+        answer: "Notes a change to the local repo"
     },
     {
-        title: "The condition in an if / else statement is enclosed within ____.",
-        choices: ["quotes", "curly brackets", "parentheses", "square brackets"],
-        answer: "parentheses"
+        title: "What is a class selector in CSS syntax?",
+        choices: ["Parentheses", "A hashtag", "A period", "Brackets"],
+        answer: "A period"
     },
     {
-        title: "Arrays in Javascript can be used to store ____.",
-        choices: ["numbers and strings", "other arrays", "booleans", "all of the above"],
-        answer: "all of the above"
+        title: "What is the name of the predefined CSS that makes styling within html easier?",
+        choices: ["Query", "Jpeg", "Node", "Bootstrap"],
+        answer: "Bootstrap"
     },
     {
-        title: "String values must be enclosed within ____ when being assigned to variables.",
-        choices: ["commas", "curly brackets", "quotes", "parenthesis"],
-        answer: "quotes"
+        title: "What is the syntax for assigning values in javascript?",
+        choices: ["if", "var", "else", "then"],
+        answer: "var"
     },
     {
         title: "A very useful tool for used during development and debugging for printing content to the debugger is:",
@@ -193,36 +193,8 @@ function allDone() {
             var newScore = JSON.stringify(allScores);
             localStorage.setItem("allScores", newScore);
             // Travels to final page
-            window.location.replace("./index_1.html");
+            window.location.replace("./highscores.html");
         }
     });
 
 }
-
-var highScore = document.querySelector("#highScore");
-var clear = document.querySelector("#clear");
-var goBack = document.querySelector("#goBack");
-
-// Event listener to clear scores 
-clear.addEventListener("click", function () {
-    localStorage.clear();
-    location.reload();
-});
-// Retreives local stroage 
-var allScores = localStorage.getItem("allScores");
-allScores = JSON.parse(allScores);
-
-if (allScores !== null) {
-
-    for (var i = 0; i < allScores.length; i++) {
-
-        var createLi = document.createElement("li");
-        createLi.textContent = allScores[i].initials + " " + allScores[i].score;
-        highScore.appendChild(createLi);
-
-    }
-}
-// Event listener to move to index page
-goBack.addEventListener("click", function () {
-    window.location.replace("./index_1.html");
-});

@@ -5,10 +5,11 @@
     width: 500px;
     height: 500px;
     border: 1px solid purple;
+    border-radius: 8px;
 }
 
 #startTime {
-    background-color: purple;
+    background-color: green;
     margin-left: 33%;
     padding: 15px 32px;
     font-size: 20px;
@@ -23,7 +24,7 @@
 }
 
 #goBack {
-    background-color: purple;
+    background-color: green;
     position: relative;
     padding: 10px;
     font-size: 20px;
@@ -38,7 +39,7 @@
 
 
 #clear {
-    background-color: purple;
+    background-color: red;
     position: relative;
     padding: 10px;
     font-size: 20px;
@@ -58,7 +59,7 @@ textarea {
 }
 
 #Submit {
-    background-color: purple;
+    background-color: red;
     margin-left: 33%;
     padding: 15px 32px;
     font-size: 20px;
@@ -79,7 +80,7 @@ h1 {
 }
 
 li {
-    background-color: purple;
+    background-color: navy;
     margin-top: 10px;
     padding: 5px 15px;
     width: 80%;
